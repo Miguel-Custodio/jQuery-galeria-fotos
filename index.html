@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery</title>
+    <title>Tarefa Modulo 10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
-    <header>
-        <h1>Galeria de Fotos</h1>
-        <button type="button">Nova Imagem +</button>
+    <header id="contato">
+    <div class="container">
+        <h2>Formulário - tarefa modulo 10</h2>
+        <form>
+            <div class="form-campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-campo">
+                <label for="cpf">CPF:</label>
+                <input type="tel" id="cpf" name="cpf">
+            </div>
+            <div class="form-campo">
+                <label for="Endereço completo">Endereço completo:</label>
+                <input type="text" id="Endereco" name="EnderecoCompleto">
+            </div>
+            <div class="form-campo">
+                <label for="cep">CEP:</label>
+                <input type="tel" id="cep" name="cep">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     </header>
-    <form>
-        <h2>Inserir nova imagem</h2>
-        <input type="url" id="endereco-imagem-nova" required placeholder="URL da Imagem" />
-        <button type="submit">Adicionar</button>
-        <button type="reset" id="botao-cancelar">Cancelar</button>
-    </form>
-    <ul>
-        <li>
-            <img src="foto1.jpg" alt="Pintura de um gato" />
-            <div class="overlay-imagem-link" >
-                <a href="foto1.jpg" title="Ver imagem tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-            </div class="overlay-imagem-link" >
-        </li>
-        <li>
-            <img src="foto2.jpg" alt="Pintura de um gato" />
-            <div class="overlay-imagem-link">
-                <a href="foto2.jpg" title="Ver imagem tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-            </div class="overlay-imagem-link">
-        </li>
-        <li>
-            <img src="foto3.jpg" alt="Pintura de um gato" />
-            <div class="overlay-imagem-link">
-                <a href="foto3.jpg" title="Ver imagem tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-            </div class="overlay-imagem-link">
-        </li>
-    </ul>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>  
 </body>
 </html>
